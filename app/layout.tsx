@@ -21,7 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://bernardocamarena.dev'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portafolio-qgwf0zwo5-bernardo-camarena-morales-projects.vercel.app'),
   title: 'Bernardo Camarena — Fullstack & Mobile Developer',
   description: 'Construyo productos web y mobile end-to-end con NestJS, React y React Native.',
   openGraph: {
