@@ -473,32 +473,16 @@ a, button, [data-hover] { cursor: none; }
 .about-portrait {
   aspect-ratio: 4/5;
   border-radius: var(--radius);
-  background:
-    repeating-linear-gradient(45deg, var(--bg-2), var(--bg-2) 8px, transparent 8px, transparent 16px),
-    var(--bg-2);
   border: 1px solid var(--line);
   position: relative;
   overflow: hidden;
-  display: grid;
-  place-items: center;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--fg-dim);
 }
-.about-portrait::after {
-  content: 'portrait / 4:5';
-  position: absolute;
-  bottom: 16px;
-  left: 16px;
-}
-.about-portrait::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 30% 40%, var(--accent) 0%, transparent 50%);
-  opacity: 0.08;
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .about-copy h3 {

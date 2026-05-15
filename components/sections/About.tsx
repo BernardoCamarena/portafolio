@@ -13,7 +13,9 @@ export function About() {
         <h2>{a.h2}</h2>
       </div>
       <div className="about-grid">
-        <div className="about-portrait reveal" />
+        <div className="about-portrait reveal">
+          <img src="/profile.jpg" alt="Bernardo Camarena" />
+        </div>
         <div className="about-copy reveal">
           <h3 dangerouslySetInnerHTML={{ __html: a.h3 }} />
           <p dangerouslySetInnerHTML={{ __html: a.p1 }} />
@@ -24,11 +26,11 @@ export function About() {
               <div className="label">{a.stats[0]}</div>
             </div>
             <div className="stat">
-              <div className="num">20+</div>
+              <div className="num">2+</div>
               <div className="label">{a.stats[1]}</div>
             </div>
             <div className="stat">
-              <div className="num">∞</div>
+              <div className="num">3</div>
               <div className="label">{a.stats[2]}</div>
             </div>
           </div>

@@ -16,10 +16,10 @@ export const T = {
     about: {
       num: '01 / sobre mí',
       h2:  'Sobre mí',
-      h3:  'Soy <em>Bernardo</em>, desarrollador fullstack y mobile. Hago que las ideas existan — del primer commit al deploy.',
-      p1:  'Trabajo con <strong>NestJS, PHP y React</strong> en el lado web, y <strong>React Native</strong> para mobile. Me gustan los productos donde la lógica importa tanto como la interfaz: dashboards, fintech, herramientas internas, mobile-first.',
-      p2:  'Disponible para colaborar como contratista o freelance — proyectos cortos, sprints largos o equipo extendido. Cero ego, mucho ship.',
-      stats: ['Years coding', 'Projects shipped', 'Coffees fueled'],
+      h3:  'Soy <em>Bernardo</em>, desarrollador fullstack y mobile con más de 5 años programando — 2+ de forma profesional.',
+      p1:  'En <strong>TMH</strong> construí apps reales usadas por múltiples clientes: plantilla para restaurantes, plataforma multi-tenant de horarios, sistema de reconocimiento facial para asistencia y app de punto de venta. Stack diario: <strong>React Native, React.js, Node.js, Go Fiber, Docker y Kotlin</strong>.',
+      p2:  'Actualmente desarrollo de forma independiente <strong>3 proyectos</strong>, entre ellos SpaERP — plataforma web SaaS + app móvil para gestión de spas, de la base de datos hasta la UI, con Nest.js, PostgreSQL, React + Vite y React Native + Expo. Licenciatura en Desarrollo de Videojuegos · Inglés B2-C1.',
+      stats: ['Años programando', 'Años profesional', 'Proyectos activos'],
     },
     skills: {
       num: '03 / servicios',
@@ -76,10 +76,10 @@ export const T = {
     about: {
       num: '01 / about',
       h2:  'About me',
-      h3:  "I'm <em>Bernardo</em>, fullstack & mobile developer. I make ideas exist — from the first commit to deploy.",
-      p1:  'I work with <strong>NestJS, PHP, and React</strong> on the web side, and <strong>React Native</strong> for mobile. I like products where the logic matters as much as the interface: dashboards, fintech, internal tools, mobile-first.',
-      p2:  'Available to collaborate as a contractor or freelancer — short projects, long sprints, or extended team. Zero ego, lots of shipping.',
-      stats: ['Years coding', 'Projects shipped', 'Coffees fueled'],
+      h3:  "I'm <em>Bernardo</em>, a fullstack & mobile developer with 5+ years coding — 2+ professionally.",
+      p1:  'At <strong>TMH</strong> I shipped real-world apps used across multiple clients: a restaurant app template, a multi-tenant scheduling platform, a facial recognition attendance system, and a Point of Sale app. Daily stack: <strong>React Native, React.js, Node.js, Go Fiber, Docker, and Kotlin</strong>.',
+      p2:  'Currently building <strong>3 independent projects</strong>, including SpaERP — a full web SaaS platform + companion mobile app for spa management, handling everything from database design to UI, using Nest.js, PostgreSQL, React + Vite, and React Native + Expo. B.S. in Video Game Development · English B2-C1.',
+      stats: ['Years coding', 'Years professional', 'Active projects'],
     },
     skills: {
       num: '03 / services',
