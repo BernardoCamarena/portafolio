@@ -56,7 +56,7 @@ export const T = {
       sub:      'Contáctame a través de estas plataformas o por correo.',
     },
     footer: {
-      madeWith: 'Hecho con cariño y NestJS',
+      madeWith: 'Hecho con cariño y Next.js',
       status:   'Disponible Q2 2026 →',
     },
   },
@@ -116,7 +116,7 @@ export const T = {
       sub:      'Reach out through any of these platforms or by email.',
     },
     footer: {
-      madeWith: 'Made with love and NestJS',
+      madeWith: 'Made with love and Next.js',
       status:   'Open for Q2 2026 →',
     },
   },
