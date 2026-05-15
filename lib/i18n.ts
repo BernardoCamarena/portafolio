@@ -43,7 +43,7 @@ export const T = {
         'Sitio editorial para estudio creativo. Animaciones GSAP, CMS headless y modo galería inmersiva.',
       ],
       types: [
-        'Fintech · Full-stack', 'SaaS · CRM', 'Mobile · Audio',
+        'Working On · SaaS', 'Working On · SaaS', 'Working On · Mobile',
         'B2B · Web app', 'E-commerce', 'Sitio editorial',
       ],
     },
@@ -103,7 +103,7 @@ export const T = {
         'Editorial website for a creative studio. GSAP animations, headless CMS, and immersive gallery mode.',
       ],
       types: [
-        'Fintech · Full-stack', 'SaaS · CRM', 'Mobile · Audio',
+        'Working On · SaaS', 'Working On · SaaS', 'Working On · Mobile',
         'B2B · Web app', 'E-commerce', 'Editorial site',
       ],
     },
