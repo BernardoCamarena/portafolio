@@ -27,6 +27,7 @@ export const PROJECTS = [
     year: '2026',
     type: 'Portfolio · Web',
     color: '#0d1f0f',
+    image: '/projects/wildstream.png',
     url: 'https://github.com/BernardoCamarena/wildstream',
   },
   {
