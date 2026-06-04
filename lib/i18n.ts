@@ -37,13 +37,13 @@ export const T = {
       descs: [
         'SaaS web para spas: agenda, clientes, inventario y empleados en un solo lugar. NestJS + React + Supabase, pagos con Stripe, deploy en Railway.',
         'App móvil para los clientes de los spas registrados en SpaERP. Agenda de citas, historial y notificaciones push.',
-        'Web para categorizar y listar empresas locales y sus sitios web. Directorio público para mi ciudad.',
+        'Plataforma de streaming científico de fauna silvestre con sistema de roles, telemetría en tiempo real y mapa de operaciones. React + Node.js + Socket.IO + PostgreSQL, desplegable con un solo comando Docker.',
         'Backoffice contable para clínicas. Reportes fiscales, conciliación bancaria y firma electrónica.',
         'Headless e-commerce con checkout custom y panel administrativo. Integración con pasarelas locales.',
         'Sitio editorial para estudio creativo. Animaciones GSAP, CMS headless y modo galería inmersiva.',
       ],
       types: [
-        'Working On · SaaS', 'Working On · Mobile', 'Working On · Web',
+        'Working On · SaaS', 'Working On · Mobile', 'Portfolio · Web',
         'B2B · Web app', 'E-commerce', 'Sitio editorial',
       ],
     },
@@ -97,13 +97,13 @@ export const T = {
       descs: [
         'Web SaaS for spas: appointments, clients, inventory and staff in one place. NestJS + React + Supabase, Stripe payments, hosted on Railway.',
         'Mobile app for spa clients registered in SpaERP. Appointment booking, history and push notifications.',
-        'Web directory to categorize and list local businesses and their websites for my city.',
+        'Scientific wildlife streaming platform with role-based privacy, real-time telemetry and live ops map. React + Node.js + Socket.IO + PostgreSQL, deployable with a single Docker command.',
         'Accounting backoffice for clinics. Tax reports, bank reconciliation, and electronic signature.',
         'Headless e-commerce with custom checkout and admin panel. Integration with local payment gateways.',
         'Editorial website for a creative studio. GSAP animations, headless CMS, and immersive gallery mode.',
       ],
       types: [
-        'Working On · SaaS', 'Working On · Mobile', 'Working On · Web',
+        'Working On · SaaS', 'Working On · Mobile', 'Portfolio · Web',
         'B2B · Web app', 'E-commerce', 'Editorial site',
       ],
     },

@@ -21,12 +21,13 @@ export const PROJECTS = [
   },
   {
     id: 'p3',
-    name: 'Directorio Empresarial',
-    desc: 'Web para categorizar y listar empresas locales y sus sitios web. Directorio público para mi ciudad.',
-    tags: ['React', 'Vite'],
+    name: 'WildStream',
+    desc: 'Plataforma de streaming científico de fauna silvestre con sistema de roles, telemetría en tiempo real y mapa de operaciones. React + Node.js + Socket.IO + PostgreSQL, desplegable con un solo comando Docker.',
+    tags: ['React', 'Node.js', 'Socket.IO', 'PostgreSQL', 'Docker'],
     year: '2026',
-    type: 'Working On · Web',
-    color: '#111827',
+    type: 'Portfolio · Web',
+    color: '#0d1f0f',
+    url: 'https://github.com/BernardoCamarena/wildstream',
   },
   {
     id: 'p4',
