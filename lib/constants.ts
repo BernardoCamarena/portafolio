@@ -22,7 +22,7 @@ export const PROJECTS = [
   {
     id: 'p3',
     name: 'WildStream',
-    desc: 'Plataforma de streaming científico de fauna silvestre con sistema de roles, telemetría en tiempo real y mapa de operaciones. React + Node.js + Socket.IO + PostgreSQL, desplegable con un solo comando Docker.',
+    desc: 'Proyecto de portafolio para demostrar arquitectura fullstack en tiempo real. Plataforma de streaming científico con sistema de roles, telemetría en vivo y mapa de operaciones. No está desplegado — está diseñado para correr localmente con un solo comando Docker.',
     tags: ['React', 'Node.js', 'Socket.IO', 'PostgreSQL', 'Docker'],
     year: '2026',
     type: 'Portfolio · Web',
