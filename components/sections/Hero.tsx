@@ -27,7 +27,7 @@ export function Hero() {
         <span className="hero-line delay-1">
           <span>
             <span className="ital">
-              I build <span className="accent">them.</span>
+              Let&apos;s build <span className="accent">them.</span>
             </span>
           </span>
         </span>

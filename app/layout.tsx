@@ -21,13 +21,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portafolio-qgwf0zwo5-bernardo-camarena-morales-projects.vercel.app'),
-  title: 'Bernardo Camarena — Fullstack & Mobile Developer',
-  description: 'Construyo productos web y mobile end-to-end con NestJS, React y React Native.',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portafolio-dusky-one-68.vercel.app'),
+  title: 'Bernardo Camarena Morales — React Engineer · React Native & Full-Stack',
+  description: 'Portfolio de Bernardo Camarena Morales — React Engineer especializado en React, React Native, TypeScript, Redux, NestJS y PHP.',
   openGraph: {
-    title: 'Bernardo Camarena — Fullstack & Mobile Developer',
-    description: 'Tus sueños, mi código.',
-    url: 'https://bernardocamarena.dev',
+    title: 'Bernardo Camarena Morales — React Engineer · React Native & Full-Stack',
+    description: 'React Engineer con 2 años de experiencia profesional en producción y apps en App Store & Google Play.',
+    url: 'https://portafolio-dusky-one-68.vercel.app',
     siteName: 'Bernardo Camarena Portfolio',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     locale: 'es_MX',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bernardo Camarena — Fullstack & Mobile Developer',
+    title: 'Bernardo Camarena Morales — React Engineer · React Native & Full-Stack',
     images: ['/og-image.png'],
   },
   robots: { index: true, follow: true },
@@ -45,12 +45,13 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Bernardo Camarena Morales',
-  url: 'https://bernardocamarena.dev',
-  jobTitle: 'Fullstack & Mobile Developer',
-  description: 'Construyo productos web y mobile end-to-end con NestJS, React y React Native.',
+  url: 'https://portafolio-dusky-one-68.vercel.app',
+  jobTitle: 'React Engineer · React Native · Full-Stack Developer',
+  description: 'React Engineer con experiencia en React, React Native, TypeScript, Redux, NestJS y PHP.',
   sameAs: [
     'https://www.linkedin.com/in/bernardo-camarena-morales-666500199/',
     'https://github.com/BernardoCamarena',
+    'https://cert.efset.org/es/wFTR6q',
   ],
 }
 
