@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useLang } from '@/hooks/useLang'
 
 export function About() {
@@ -14,7 +15,13 @@ export function About() {
       </div>
       <div className="about-grid">
         <div className="about-portrait reveal">
-          <img src="/profile.jpg" alt="Bernardo Camarena" />
+          <Image
+            src="/profile.jpg"
+            alt="Bernardo Camarena"
+            width={480}
+            height={560}
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+          />
         </div>
         <div className="about-copy reveal">
           <h3 dangerouslySetInnerHTML={{ __html: a.h3 }} />
@@ -30,7 +37,7 @@ export function About() {
               <div className="label">{a.stats[1]}</div>
             </div>
             <div className="stat">
-              <div className="num">3</div>
+              <div className="num">C1</div>
               <div className="label">{a.stats[2]}</div>
             </div>
           </div>

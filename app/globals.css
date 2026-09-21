@@ -605,18 +605,34 @@ a, button, [data-hover] { cursor: none; }
   transition: grid-template-columns 550ms cubic-bezier(0.7, 0.05, 0.1, 1);
 }
 
+.projects-bento-reverse {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: repeat(2, 320px);
+  gap: 10px;
+  margin-top: 10px;
+  transition: grid-template-columns 550ms cubic-bezier(0.7, 0.05, 0.1, 1);
+}
+
 /* tall card on the left spans both rows */
 .projects-bento .project-card:first-child {
   grid-row: span 2;
 }
 
+/* tall card on the right spans both rows */
+.projects-bento-reverse .project-card:last-child {
+  grid-row: span 2;
+}
+
 @media (max-width: 900px) {
-  .projects-bento {
+  .projects-bento,
+  .projects-bento-reverse {
     grid-template-columns: 1fr !important;
     grid-template-rows: auto;
     transition: none;
   }
-  .projects-bento .project-card:first-child {
+  .projects-bento .project-card:first-child,
+  .projects-bento-reverse .project-card:last-child {
     grid-row: span 1;
   }
 }

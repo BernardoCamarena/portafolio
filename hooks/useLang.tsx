@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useContext, useState, useEffect, type ReactNode } from 'react'
+import { createContext, useContext, useSyncExternalStore, type ReactNode } from 'react'
 import { T, type Lang } from '@/lib/i18n'
 
 type Translations = (typeof T)[Lang]
@@ -17,17 +17,32 @@ const LangContext = createContext<LangCtx>({
   t:       T.es,
 })
 
-export function LangProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>('es')
+function subscribe(callback: () => void) {
+  if (typeof window === 'undefined') return () => {}
+  window.addEventListener('storage', callback)
+  window.addEventListener('bcm-lang-change', callback)
+  return () => {
+    window.removeEventListener('storage', callback)
+    window.removeEventListener('bcm-lang-change', callback)
+  }
+}
 
-  useEffect(() => {
-    const stored = localStorage.getItem('bcm-lang') as Lang | null
-    if (stored === 'es' || stored === 'en') setLangState(stored)
-  }, [])
+function getSnapshot(): Lang {
+  if (typeof window === 'undefined') return 'es'
+  const stored = localStorage.getItem('bcm-lang')
+  return stored === 'en' ? 'en' : 'es'
+}
+
+function getServerSnapshot(): Lang {
+  return 'es'
+}
+
+export function LangProvider({ children }: { children: ReactNode }) {
+  const lang = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 
   function setLang(l: Lang) {
-    setLangState(l)
     localStorage.setItem('bcm-lang', l)
+    window.dispatchEvent(new Event('bcm-lang-change'))
   }
 
   return (
