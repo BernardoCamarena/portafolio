@@ -26,6 +26,7 @@ export function Nav() {
     { href: '#about',    label: t.nav.about },
     { href: '#skills',   label: t.nav.services },
     { href: '#projects', label: t.nav.work },
+    { href: '#games',    label: t.nav.games },
     { href: '#contact',  label: t.nav.contact },
   ]
 

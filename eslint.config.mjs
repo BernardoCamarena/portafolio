@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Unity WebGL export (minified third-party code)
+    "public/play/**",
   ]),
 ]);
 
