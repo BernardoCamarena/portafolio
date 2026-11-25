@@ -116,6 +116,49 @@ function ProjectCard({
 }
 
 const THREE = PROJECTS.slice(0, 3)
+const REST  = PROJECTS.slice(3)
+
+function ProjectIndex() {
+  const { t } = useLang()
+
+  return (
+    <div className="project-index reveal">
+      <h3 className="project-index-title">{t.projects.more}</h3>
+      <ul>
+        {REST.map((p, k) => {
+          const i      = k + 3
+          const url    = 'url' in p ? p.url : undefined
+          const isCode = !!url && url.includes('github.com')
+          const row = (
+            <>
+              <span className="pi-year">{p.year}</span>
+              <span className="pi-main">
+                <span className="pi-name">{p.name}</span>
+                <span className="pi-desc">{t.projects.descs[i]}</span>
+              </span>
+              <span className="pi-type">{t.projects.types[i]}</span>
+              <span className="pi-tags">
+                {p.tags.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
+              </span>
+              <span className="pi-link">
+                {url ? `${isCode ? t.projects.code : t.projects.visit} ↗` : ''}
+              </span>
+            </>
+          )
+          return (
+            <li key={p.id}>
+              {url ? (
+                <a className="pi-row" href={url} target="_blank" rel="noreferrer" data-hover>{row}</a>
+              ) : (
+                <div className="pi-row">{row}</div>
+              )}
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
+}
 
 export function Projects() {
   const [activeCol, setActiveCol] = useState<number | null>(null)
@@ -166,6 +209,7 @@ export function Projects() {
           onLeave={leave}
         />
       </div>
+      <ProjectIndex />
     </section>
   )
 }

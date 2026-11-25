@@ -5,6 +5,7 @@ import { Hero } from '@/components/sections/Hero'
 import { About } from '@/components/sections/About'
 import { Skills } from '@/components/sections/Skills'
 import { Projects } from '@/components/sections/Projects'
+import { Games } from '@/components/sections/Games'
 import { Contact } from '@/components/sections/Contact'
 import { Marquee } from '@/components/ui/Marquee'
 import { Clock } from '@/components/ui/Clock'
@@ -23,6 +24,7 @@ export default function Home() {
           <About />
           <Skills />
           <Projects />
+          <Games />
           <Contact />
         </main>
         <Footer />

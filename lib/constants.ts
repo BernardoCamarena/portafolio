@@ -1,19 +1,19 @@
 export const PROJECTS = [
   {
     id: 'p1',
-    name: 'SpaERP',
-    desc: 'SaaS web para spas y centros de bienestar: agenda de citas, clientes, inventario, control de gastos y proyecciones de ingresos. Backend en NestJS + Prisma, frontend en React + Vite + TailwindCSS, base de datos en PostgreSQL (Supabase), pagos con Stripe, desplegado en Railway.',
+    name: 'Bellabalanza',
+    desc: 'SaaS para negocios de belleza y bienestar en México: agenda por terapeuta, expediente clínico con consentimientos, ventas, inventario con recetas por servicio, equipo y permisos, y finanzas con punto de equilibrio. NestJS + Prisma, React + Vite + TailwindCSS, PostgreSQL, suscripciones con Stripe.',
     tags: ['React', 'NestJS', 'PostgreSQL', 'Prisma', 'TailwindCSS', 'Stripe'],
     year: '2026',
     type: 'SaaS · En desarrollo',
     color: '#161c0e',
-    image: '/projects/spaerp.png',
-    url: 'https://spaerpweb-production.up.railway.app/',
+    image: '/projects/bellabalanza.webp',
+    url: 'https://bellabalanza.com/',
   },
   {
     id: 'p2',
-    name: 'SpaERP Mobile',
-    desc: 'App móvil complementaria para clientes de SpaERP. Agendamiento de citas, historial, medidas corporales, gráficas de progreso y notificaciones push.',
+    name: 'Bellabalanza Mobile',
+    desc: 'App móvil complementaria para clientas de Bellabalanza. Agendamiento de citas, historial, medidas corporales, gráficas de progreso y notificaciones push.',
     tags: ['React Native', 'Expo', 'TypeScript', 'NestJS'],
     year: '2026',
     type: 'Mobile · En desarrollo',
@@ -56,6 +56,52 @@ export const PROJECTS = [
     color: '#0d1f0f',
     image: '/projects/wildstream.png',
     url: 'https://github.com/BernardoCamarena/wildstream',
+  },
+] as const
+
+// Builds hosted as GitHub Release assets (too large for Vercel static files)
+const RELEASE = 'https://github.com/BernardoCamarena/portafolio/releases/download/games-v1'
+
+export const GAMES = [
+  {
+    id: 'royale-defense',
+    name: 'Royale Defense',
+    year: '2023',
+    engine: 'Unity 2021.3',
+    platforms: 'Windows · Web',
+    team: 3,
+    cover: '/games/royale-defense/cover.webp',
+    shots: [
+      { src: '/games/royale-defense/cover.webp' },
+      { src: '/games/royale-defense/cards.webp' },
+      { src: '/games/royale-defense/level-01.webp' },
+      { src: '/games/royale-defense/tutorial.webp' },
+      { src: '/games/royale-defense/wave-clear.webp' },
+      { src: '/games/royale-defense/menu.webp' },
+    ],
+    download: { url: `${RELEASE}/RoyaleDefense-v0.4-Windows.zip`, size: '40 MB', version: 'v0.4' },
+    play: '/play/royale-defense/index.html',
+    tags: ['Unity', 'C#', 'Tower Defense', 'Cartas'],
+  },
+  {
+    id: 'fears-forest',
+    name: "Fear's Forest",
+    year: '2023',
+    engine: 'Unreal Engine 5.3',
+    platforms: 'Windows',
+    team: null,
+    cover: '/games/fears-forest/cover.webp',
+    shots: [
+      { src: '/games/fears-forest/cover.webp' },
+      { src: '/games/fears-forest/flashlight.webp' },
+      { src: '/games/fears-forest/cabin.webp' },
+      { src: '/games/fears-forest/aim.webp' },
+      { src: '/games/fears-forest/camp.webp' },
+      { src: '/games/fears-forest/controls.webp' },
+    ],
+    download: { url: `${RELEASE}/FearsForest-Windows.zip`, size: '497 MB', version: 'Build final' },
+    play: null,
+    tags: ['Unreal Engine 5', 'Blueprints', 'Survival Horror', '3ª persona'],
   },
 ] as const
 
@@ -104,4 +150,5 @@ export const MARQUEE_ITEMS = [
   'PHP Backends',
   'App Store & Google Play',
   'Azure DevOps & CI/CD',
+  'Game Dev · Unity & Unreal',
 ] as const

@@ -20,11 +20,12 @@ export function Footer() {
         <h5>Sitemap</h5>
         <a href="#about"    data-hover>{t.nav.about}</a>
         <a href="#projects" data-hover>{t.nav.work}</a>
+        <a href="#games"    data-hover>{t.nav.games}</a>
         <a href="#contact"  data-hover>{t.nav.contact}</a>
       </div>
       <div className="foot-col">
         <h5>Stack</h5>
-        <p>NestJS · PHP · React · React Native · TypeScript</p>
+        <p>React · React Native · TypeScript · NestJS · PHP · Unity · Unreal</p>
       </div>
       <div className="foot-col">
         <h5>Status</h5>
